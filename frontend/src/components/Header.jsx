@@ -1,12 +1,7 @@
-<<<<<<< HEAD
 import { FaSignInAlt, FaSignOutAlt, FaUser } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { logout, reset } from "../features/auth/authSlicer";
-=======
-import { FaSignInAlt, FaUser } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
->>>>>>> 19ea61c650ea50ebf0b630361e74836b062aed1a
 
 function Header() {
   const navigate = useNavigate();
@@ -20,31 +15,10 @@ function Header() {
   };
 
   return (
-<<<<<<< HEAD
-=======
-    // <header className="header">
-    //   <div className="logo">
-    //     <Link to="/">GoalSetter</Link>
-    //   </div>
-    // <ul>
-    //   <li>
-    //     <link to="/login">
-    //       <FaSignInAlt>Login</FaSignInAlt>
-    //     </link>
-    //   </li>
-    //   <li>
-    //     <link to="/register">
-    //       <FaUser>Login</FaUser>
-    //     </link>
-    //   </li>
-    // </ul>
-    // </header>
->>>>>>> 19ea61c650ea50ebf0b630361e74836b062aed1a
     <header className="header">
       <div className="logo">
         <Link to="/">GoalSetter</Link>
       </div>
-<<<<<<< HEAD
       <ul>
         {user ? (
           <li>
@@ -67,21 +41,6 @@ function Header() {
             </li>
           </>
         )}
-=======
-
-      <ul>
-        <li>
-          <Link to={'/login'}>
-            <FaSignInAlt>Login</FaSignInAlt>
-          </Link>
-        </li>
-
-        <li>
-          <Link to={'/register'}>
-            <FaUser>Login</FaUser>
-          </Link>
-        </li>
->>>>>>> 19ea61c650ea50ebf0b630361e74836b062aed1a
       </ul>
     </header>
   );

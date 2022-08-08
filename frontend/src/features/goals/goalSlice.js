@@ -54,6 +54,7 @@ export const deleteGoal = createAsyncThunk(
     try {
       //because goals is a protected route we need to get user from the gobal
       //state using a function in the thunk api
+
       const token = thunkAPI.getState().auth.user.token;
       return await goalService.deleteGoal(id, token);
     } catch (error) {
